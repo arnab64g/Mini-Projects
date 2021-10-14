@@ -12,14 +12,19 @@ namespace Matrix_Multiplication
         Button contin = new Button();
         public Form1()
         {
+            
             InitializeComponent();
             Console.WriteLine("Initializing");
             button1.Click += input_Filed;
             calculate.Click += calculateMatrix;
             contin.Click += continue_multi;
+            button2.Click += clearfield;
+            button3.Click += closeWin;
+            
         }
         private void input_Filed(object o, EventArgs e)
         {
+            
             Console.WriteLine("Button 1");
             int n = (int)numericUpDown1.Value;
             for (int i = 0; i < 5; i++)
@@ -57,6 +62,7 @@ namespace Matrix_Multiplication
             calculate.Text = "Calculate";
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            Controls.Add(button2);
             Controls.Add(calculate);
             Controls.Add(cb);
         }
@@ -84,15 +90,21 @@ namespace Matrix_Multiplication
                         txtB[i, j].Text = "0";
                     matB[i, j] = double.Parse(txtB[i, j].Text.ToString());
                 }
-            string st = cb.SelectedItem.ToString();
-            label3.Text = st;
-
-            if (st == "Addition")
+            string st = "";
+            if(cb.SelectedIndex != -1) {
+                st = cb.SelectedItem.ToString();
+                label3.Text = st;
+            }
+                if(st == "Addition")
                 Matrix_Multiply.addition(matA, matB, matR, sz);
-            else if (st == "Substraction")
+            else if(st == "Substraction")
                 Matrix_Multiply.substraction(matA, matB, matR, sz);
-            else if (st == "Multiplication")
+            else if(st == "Multiplication")
                 Matrix_Multiply.multiply(matA, matB, matR, sz);
+            else {
+                MessageBox.Show("No Operation Selected", "Error");
+                return;
+            }
             for (int i = 0; i < sz; i++)
                for (int j = 0; j < sz; j++)
                {
@@ -119,6 +131,24 @@ namespace Matrix_Multiplication
             for (int i = 0; i < sz; i++)
                 for (int j = 0; j < sz; j++)
                     Controls.Remove(lab[i, j]);
+        }
+        private void clearfield(object sender, EventArgs e)
+        {
+            for(int i = 0; i < 5; i++)
+                for(int j = 0; j < 5; j++)
+                    Controls.Remove(txtA[i, j]);
+            for(int i = 0; i < 5; i++)
+                for(int j = 0; j < 5; j++)
+                    Controls.Remove(txtB[i, j]);
+			for(int i = 0; i < 5; i++) {
+				for(int j = 0; j < 5; j++) {
+                    Controls.Remove(lab[i, j]);
+				}
+			}
+        }
+        private void closeWin(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
