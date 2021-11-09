@@ -1,5 +1,0 @@
-C:\Users\arnab\Documents\Matrix_Multiplication\bin\Debug\net5.0-windows\publish\Matrix_Multiplication.exe
-C:\Users\arnab\Documents\Matrix_Multiplication\bin\Debug\net5.0-windows\publish\Matrix_Multiplication.dll
-C:\Users\arnab\Documents\Matrix_Multiplication\bin\Debug\net5.0-windows\publish\Matrix_Multiplication.deps.json
-C:\Users\arnab\Documents\Matrix_Multiplication\bin\Debug\net5.0-windows\publish\Matrix_Multiplication.runtimeconfig.json
-C:\Users\arnab\Documents\Matrix_Multiplication\bin\Debug\net5.0-windows\publish\Matrix_Multiplication.pdb
