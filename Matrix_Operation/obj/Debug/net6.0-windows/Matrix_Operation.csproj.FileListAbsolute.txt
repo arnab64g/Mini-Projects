@@ -1,0 +1,15 @@
+C:\Users\arnab\Documents\winform\Matrix_Operation\bin\Debug\net6.0-windows\Matrix_Operation.exe
+C:\Users\arnab\Documents\winform\Matrix_Operation\bin\Debug\net6.0-windows\Matrix_Operation.deps.json
+C:\Users\arnab\Documents\winform\Matrix_Operation\bin\Debug\net6.0-windows\Matrix_Operation.runtimeconfig.json
+C:\Users\arnab\Documents\winform\Matrix_Operation\bin\Debug\net6.0-windows\Matrix_Operation.dll
+C:\Users\arnab\Documents\winform\Matrix_Operation\bin\Debug\net6.0-windows\ref\Matrix_Operation.dll
+C:\Users\arnab\Documents\winform\Matrix_Operation\bin\Debug\net6.0-windows\Matrix_Operation.pdb
+C:\Users\arnab\Documents\winform\Matrix_Operation\obj\Debug\net6.0-windows\Matrix_Operation.csproj.AssemblyReference.cache
+C:\Users\arnab\Documents\winform\Matrix_Operation\obj\Debug\net6.0-windows\Matrix_Operation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arnab\Documents\winform\Matrix_Operation\obj\Debug\net6.0-windows\Matrix_Operation.AssemblyInfoInputs.cache
+C:\Users\arnab\Documents\winform\Matrix_Operation\obj\Debug\net6.0-windows\Matrix_Operation.AssemblyInfo.cs
+C:\Users\arnab\Documents\winform\Matrix_Operation\obj\Debug\net6.0-windows\Matrix_Operation.csproj.CoreCompileInputs.cache
+C:\Users\arnab\Documents\winform\Matrix_Operation\obj\Debug\net6.0-windows\Matrix_Operation.dll
+C:\Users\arnab\Documents\winform\Matrix_Operation\obj\Debug\net6.0-windows\ref\Matrix_Operation.dll
+C:\Users\arnab\Documents\winform\Matrix_Operation\obj\Debug\net6.0-windows\Matrix_Operation.pdb
+C:\Users\arnab\Documents\winform\Matrix_Operation\obj\Debug\net6.0-windows\Matrix_Operation.genruntimeconfig.cache
