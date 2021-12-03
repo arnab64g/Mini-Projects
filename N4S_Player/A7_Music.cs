@@ -18,7 +18,6 @@ namespace N4S_Player
             playtime.Start();
             playtime.Interval = 1000;
             playtime.Tick += Update_Bar;
-            
             for (int i = 0; i < count; i++)
             {
                 ws = new AudioFileReader(D[i].pathdetails);
@@ -41,7 +40,6 @@ namespace N4S_Player
             seek.Scroll += Seek_Music;
             Previous.Click += Play_Prev;
             Next.Click += Play_Next;
-            
         }
         private void Close_Prog(object? sender, EventArgs e)
         {
@@ -92,7 +90,6 @@ namespace N4S_Player
         }
         public void Play_Music(Object? sender, EventArgs e)
         {
-
             if (MusicList.SelectedItems.Count == 0)
             {
                 ci = 0;
@@ -121,7 +118,6 @@ namespace N4S_Player
                 try
                 {
                     var taglb = TagLib.File.Create(D[ci].pathdetails);
-
                     var bin = (byte[])(taglb.Tag.Pictures[0].Data.Data);
                     PlayImage.Image = Image.FromStream(new MemoryStream(bin));
                 }
@@ -137,8 +133,7 @@ namespace N4S_Player
         }
         private void Update_Bar(object? sender, EventArgs e)
         {
-            label1.Text = DateTime.Now.ToString(@"MMMM dd, yyyy  ddddd   hh:mm:ss tt");
-            
+            label1.Text = DateTime.Now.ToString(@"MMMM dd, yyyy  ddddd   hh:mm:ss tt");            
             if (run && count != 0)
             {
                 npl.Text = "Now Playing: " + D[ci].name;
@@ -163,7 +158,6 @@ namespace N4S_Player
         }
         private void Stop_Current(object? sender, EventArgs e)
         {
-          
             wo.Stop();
             wo.Dispose();
             PlayImage.Image = global::N4S_Player.Properties.Resources.pngegg;
@@ -172,13 +166,8 @@ namespace N4S_Player
             Stop.Visible = false;
             run = false;
             Duration.Visible = false;
-            TDuration.Visible = false;
-            
-           
+            TDuration.Visible = false;  
         }
-
-       
-
         private void Play_Music_s(object? sender, MouseEventArgs e)
         {
             if (run)
