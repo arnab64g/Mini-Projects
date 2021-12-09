@@ -20,7 +20,6 @@ namespace N4S_Player
             var dvs = deviceEnumerator.EnumerateAudioEndPoints(DataFlow.Render, DeviceState.Active).ToList();
             device = dvs.ElementAt<MMDevice>(0);
             dvs.Clear();
-            
             npl.Text = device.ToString();
             for (int i = 0; i < count; i++)
             {
@@ -73,7 +72,7 @@ namespace N4S_Player
             MusicList.SelectedItems.Clear();
             if (ci == count - 1)
             {
-                if (repeat.Checked == true)
+                if (repeat.Enabled)
                 {
                     ci = 0;
                     MusicList.Items[ci].Selected = true;
@@ -148,17 +147,15 @@ namespace N4S_Player
                 Duration.Text = ts.ToString(@"mm\:ss");
                 Duration.Visible = true;
                 TDuration.Visible = true;
-                TDuration.Visible = true;
-                seek.Value = ct;
-                progressBarAdv1.Value = (int)(device.AudioMeterInformation.MasterPeakValue * 100);
-                progressBarAdv2.Value = (int)(device.AudioMeterInformation.PeakValues[1] * 100);
-                progressBarAdv3.Value = (int)(device.AudioMeterInformation.PeakValues[0] * 100);
+              
+                seek.Value = ct;  
+                label1.Height = (int)(device.AudioMeterInformation.PeakValues[1] * progressBarAdv2.Height);
+                label2.Height = (int)(device.AudioMeterInformation.PeakValues[0] * progressBarAdv3.Height);
             }
             else
             {
-                progressBarAdv1.Value = 0;
-                progressBarAdv2.Value = 0;
-                progressBarAdv3.Value = 0;
+                label1.Height = 0;
+                label2.Height = 0;
             }
             if (wo.PlaybackState == PlaybackState.Stopped)
             {

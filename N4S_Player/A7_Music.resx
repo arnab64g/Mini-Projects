@@ -61,7 +61,7 @@
     <value>False</value>
   </metadata>
   <data name="st.Text" xml:space="preserve">
-    <value />
+    <value>Song Title</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="st.Width" type="System.Int32, mscorlib">
@@ -71,7 +71,7 @@
     <value>False</value>
   </metadata>
   <data name="td.Text" xml:space="preserve">
-    <value />
+    <value>Duration</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="td.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
@@ -85,6 +85,9 @@
   </data>
   <data name="MusicList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="MusicList.DataSource" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAEAQAAAA1TeXN0ZW0uT2JqZWN0AAAAAAs=</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MusicList.Font" type="System.Drawing.Font, System.Drawing">
@@ -113,25 +116,28 @@
     <value>MusicList</value>
   </data>
   <data name="&gt;&gt;MusicList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Syncfusion.Windows.Forms.Tools.DataListView, Syncfusion.Tools.Windows, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;MusicList.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MusicList.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>19</value>
   </data>
-  <data name="Browse.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="Browse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="Browse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="Browse.Location" type="System.Drawing.Point, System.Drawing">
     <value>396, 416</value>
   </data>
   <data name="Browse.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="Browse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 41</value>
+    <value>79, 47</value>
   </data>
   <data name="Browse.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -146,7 +152,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Browse.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>18</value>
   </data>
   <data name="Title.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -179,7 +185,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Title.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
   <data name="voltb.Location" type="System.Drawing.Point, System.Drawing">
     <value>669, 423</value>
@@ -191,25 +197,22 @@
     <value>No</value>
   </data>
   <data name="voltb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 34</value>
+    <value>120, 20</value>
   </data>
   <data name="voltb.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="resource.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Red</value>
   </data>
   <data name="&gt;&gt;voltb.Name" xml:space="preserve">
     <value>voltb</value>
   </data>
   <data name="&gt;&gt;voltb.Type" xml:space="preserve">
-    <value>Krypton.Toolkit.KryptonTrackBar, Krypton.Toolkit, Culture=neutral, PublicKeyToken=null</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;voltb.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;voltb.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="Duration.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -218,7 +221,7 @@
     <value>Nirmala UI, 12pt, style=Bold</value>
   </data>
   <data name="Duration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 301</value>
+    <value>15, 354</value>
   </data>
   <data name="Duration.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -245,13 +248,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Duration.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="seek.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="seek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 337</value>
+    <value>9, 377</value>
   </data>
   <data name="seek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -262,29 +265,26 @@
   <data name="seek.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="resource.ImageTransparentColor1" type="System.Drawing.Color, System.Drawing">
-    <value>Transparent</value>
-  </data>
   <data name="&gt;&gt;seek.Name" xml:space="preserve">
     <value>seek</value>
   </data>
   <data name="&gt;&gt;seek.Type" xml:space="preserve">
-    <value>Krypton.Toolkit.KryptonTrackBar, Krypton.Toolkit, Culture=neutral, PublicKeyToken=null</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;seek.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;seek.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <metadata name="playtime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="Next.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="Next.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="Next.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 420</value>
+    <value>217, 420</value>
   </data>
   <data name="Next.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -293,7 +293,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="Next.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 39</value>
+    <value>53, 46</value>
   </data>
   <data name="Next.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -308,13 +308,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Next.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
-  <data name="Previous.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="Previous.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="Previous.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 420</value>
+    <value>51, 420</value>
   </data>
   <data name="Previous.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -323,7 +323,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="Previous.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 39</value>
+    <value>53, 46</value>
   </data>
   <data name="Previous.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -341,10 +341,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Previous.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
-  <data name="Stop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="Stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="Stop.Location" type="System.Drawing.Point, System.Drawing">
     <value>294, 413</value>
@@ -356,7 +356,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="Stop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>63, 60</value>
   </data>
   <data name="Stop.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -374,19 +374,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Stop.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="Play.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="Play.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="Play.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="Play.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="Play.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 399</value>
+    <value>112, 399</value>
   </data>
   <data name="Play.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -395,7 +395,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="Play.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 74</value>
+    <value>97, 81</value>
   </data>
   <data name="Play.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -410,16 +410,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Play.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
-  <data name="Pause.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="Pause.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="Pause.Font" type="System.Drawing.Font, System.Drawing">
     <value>Leelawadee, 8.25pt</value>
   </data>
   <data name="Pause.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 400</value>
+    <value>112, 400</value>
   </data>
   <data name="Pause.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -428,7 +428,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="Pause.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 74</value>
+    <value>97, 81</value>
   </data>
   <data name="Pause.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -446,7 +446,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Pause.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>17</value>
   </data>
   <data name="vollbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -455,7 +455,7 @@
     <value>PMingLiU-ExtB, 8.25pt, style=Bold, Italic</value>
   </data>
   <data name="vollbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>688, 462</value>
+    <value>679, 445</value>
   </data>
   <data name="vollbl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -482,10 +482,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;vollbl.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="PlayImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 59</value>
+    <value>76, 60</value>
   </data>
   <data name="PlayImage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -509,7 +509,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PlayImage.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="TDuration.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -518,7 +518,7 @@
     <value>Nirmala UI, 12pt, style=Bold</value>
   </data>
   <data name="TDuration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 301</value>
+    <value>337, 354</value>
   </data>
   <data name="TDuration.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -542,33 +542,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TDuration.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="bps.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 268</value>
-  </data>
-  <data name="bps.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 17</value>
-  </data>
-  <data name="bps.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="bps.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;bps.Name" xml:space="preserve">
-    <value>bps</value>
-  </data>
-  <data name="&gt;&gt;bps.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bps.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bps.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="npl.AutoSize" type="System.Boolean, mscorlib">
@@ -601,20 +574,23 @@
   <data name="&gt;&gt;npl.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="repeat.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="repeat.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="repeat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="repeat.Font" type="System.Drawing.Font, System.Drawing">
     <value>Yu Gothic UI Light, 12pt</value>
   </data>
   <data name="repeat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 423</value>
+    <value>517, 416</value>
+  </data>
+  <data name="repeat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="repeat.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="repeat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 28</value>
+    <value>25, 20</value>
   </data>
   <data name="repeat.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -623,7 +599,7 @@
     <value>repeat</value>
   </data>
   <data name="&gt;&gt;repeat.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;repeat.Parent" xml:space="preserve">
     <value>$this</value>
@@ -635,7 +611,7 @@
     <value>True</value>
   </data>
   <data name="ln.Location" type="System.Drawing.Point, System.Drawing">
-    <value>763, 462</value>
+    <value>742, 445</value>
   </data>
   <data name="ln.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 15</value>
@@ -655,35 +631,44 @@
   <data name="&gt;&gt;ln.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="progressBarAdv1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 52</value>
+  <data name="label1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
-  <data name="progressBarAdv1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 33</value>
+  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
-  <data name="progressBarAdv1.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 265</value>
   </data>
-  <data name="progressBarAdv1.Text" xml:space="preserve">
-    <value>progressBarAdv1</value>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="&gt;&gt;progressBarAdv1.Name" xml:space="preserve">
-    <value>progressBarAdv1</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 0</value>
   </data>
-  <data name="&gt;&gt;progressBarAdv1.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ProgressBarAdv, Syncfusion.Shared.Base, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;progressBarAdv1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>--</value>
   </data>
-  <data name="&gt;&gt;progressBarAdv1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>progressBarAdv2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="progressBarAdv2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 60</value>
+    <value>345, 60</value>
   </data>
   <data name="progressBarAdv2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 225</value>
+    <value>25, 265</value>
   </data>
   <data name="progressBarAdv2.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -695,19 +680,52 @@
     <value>progressBarAdv2</value>
   </data>
   <data name="&gt;&gt;progressBarAdv2.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ProgressBarAdv, Syncfusion.Shared.Base, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;progressBarAdv2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;progressBarAdv2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="label2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="label2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 264</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 0</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>--</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>progressBarAdv3</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="progressBarAdv3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 60</value>
+    <value>35, 60</value>
   </data>
   <data name="progressBarAdv3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 225</value>
+    <value>25, 264</value>
   </data>
   <data name="progressBarAdv3.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -719,12 +737,39 @@
     <value>progressBarAdv3</value>
   </data>
   <data name="&gt;&gt;progressBarAdv3.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ProgressBarAdv, Syncfusion.Shared.Base, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;progressBarAdv3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;progressBarAdv3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>517, 441</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 15</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Repeat</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

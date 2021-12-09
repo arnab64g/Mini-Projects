@@ -19,9 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
         #region Windows Form Designer generated code
-
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
@@ -32,12 +30,15 @@
             System.Windows.Forms.ColumnHeader st;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A7_Music));
             System.Windows.Forms.ColumnHeader td;
-            this.MusicList = new System.Windows.Forms.ListView();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection1 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection1 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection1 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            this.MusicList = new Syncfusion.Windows.Forms.Tools.DataListView();
             this.Browse = new System.Windows.Forms.Button();
             this.Title = new System.Windows.Forms.Label();
-            this.voltb = new Krypton.Toolkit.KryptonTrackBar();
+            this.voltb = new Syncfusion.Windows.Forms.Tools.TrackBarEx(0, 100);
             this.Duration = new System.Windows.Forms.Label();
-            this.seek = new Krypton.Toolkit.KryptonTrackBar();
+            this.seek = new Syncfusion.Windows.Forms.Tools.TrackBarEx(0, 10);
             this.playtime = new System.Windows.Forms.Timer(this.components);
             this.Next = new System.Windows.Forms.Button();
             this.Previous = new System.Windows.Forms.Button();
@@ -47,19 +48,20 @@
             this.vollbl = new System.Windows.Forms.Label();
             this.PlayImage = new System.Windows.Forms.PictureBox();
             this.TDuration = new System.Windows.Forms.Label();
-            this.bps = new System.Windows.Forms.Label();
             this.npl = new System.Windows.Forms.Label();
-            this.repeat = new System.Windows.Forms.CheckBox();
+            this.repeat = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.ln = new System.Windows.Forms.Label();
-            this.progressBarAdv1 = new Syncfusion.Windows.Forms.Tools.ProgressBarAdv();
-            this.progressBarAdv2 = new Syncfusion.Windows.Forms.Tools.ProgressBarAdv();
-            this.progressBarAdv3 = new Syncfusion.Windows.Forms.Tools.ProgressBarAdv();
+            this.progressBarAdv2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Panel();
+            this.progressBarAdv3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             st = new System.Windows.Forms.ColumnHeader("(none)");
             td = new System.Windows.Forms.ColumnHeader();
             ((System.ComponentModel.ISupportInitialize)(this.PlayImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarAdv1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarAdv2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarAdv3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repeat)).BeginInit();
+            this.progressBarAdv2.SuspendLayout();
+            this.progressBarAdv3.SuspendLayout();
             this.SuspendLayout();
             // 
             // st
@@ -75,10 +77,12 @@
             // 
             resources.ApplyResources(this.MusicList, "MusicList");
             this.MusicList.BackColor = System.Drawing.Color.Firebrick;
+            this.MusicList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MusicList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             st,
             td});
             this.MusicList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MusicList.DataSource = ((object)(resources.GetObject("MusicList.DataSource")));
             this.MusicList.ForeColor = System.Drawing.Color.White;
             this.MusicList.FullRowSelect = true;
             this.MusicList.GridLines = true;
@@ -91,13 +95,15 @@
             // Browse
             // 
             this.Browse.BackColor = System.Drawing.Color.Transparent;
-            this.Browse.FlatAppearance.BorderSize = 0;
-            this.Browse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Browse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             resources.ApplyResources(this.Browse, "Browse");
-            this.Browse.ForeColor = System.Drawing.Color.Transparent;
-            this.Browse.Image = global::N4S_Player.Properties.Resources.folder__1_1;
+            this.Browse.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.Browse.FlatAppearance.BorderSize = 0;
+            this.Browse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Browse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Browse.ForeColor = System.Drawing.Color.Red;
+            this.Browse.Image = global::N4S_Player.Properties.Resources.folder__1_;
             this.Browse.Name = "Browse";
+            this.Browse.TabStop = false;
             this.Browse.UseVisualStyleBackColor = false;
             // 
             // Title
@@ -110,39 +116,26 @@
             // voltb
             // 
             this.voltb.AccessibleRole = System.Windows.Forms.AccessibleRole.ProgressBar;
-            this.voltb.BackStyle = Krypton.Toolkit.PaletteBackStyle.ControlCustom1;
+            this.voltb.BackColor = System.Drawing.Color.Transparent;
+            this.voltb.BeforeTouchSize = new System.Drawing.Size(120, 20);
+            this.voltb.ButtonColor = System.Drawing.Color.Red;
+            this.voltb.ButtonSignColor = System.Drawing.Color.Fuchsia;
+            this.voltb.ChannelHeight = 8;
             this.voltb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.voltb.DecreaseButtonSize = new System.Drawing.Size(0, 0);
+            this.voltb.ForeColor = System.Drawing.Color.Purple;
+            this.voltb.IncreaseButtonSize = new System.Drawing.Size(0, 0);
             resources.ApplyResources(this.voltb, "voltb");
-            this.voltb.Maximum = 100;
             this.voltb.Name = "voltb";
-            this.voltb.OverrideFocus.Track.Color1 = System.Drawing.Color.Maroon;
-            this.voltb.StateCommon.Position.Color1 = System.Drawing.Color.Yellow;
-            this.voltb.StateCommon.Position.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.voltb.StateCommon.Tick.Color2 = System.Drawing.Color.Olive;
-            this.voltb.StateCommon.Track.Color2 = System.Drawing.Color.Blue;
-            this.voltb.StateNormal.Position.Color1 = System.Drawing.Color.OrangeRed;
-            this.voltb.StateNormal.Position.Color3 = System.Drawing.Color.Yellow;
-            this.voltb.StateNormal.Tick.Color1 = System.Drawing.Color.DarkOrange;
-            this.voltb.StateNormal.Tick.Color2 = System.Drawing.Color.Red;
-            this.voltb.StateNormal.Tick.Color3 = System.Drawing.Color.Olive;
-            this.voltb.StateNormal.Tick.Color4 = System.Drawing.Color.Maroon;
-            this.voltb.StateNormal.Tick.Color5 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.voltb.StateNormal.Track.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.voltb.StateNormal.Track.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.voltb.StateNormal.Track.Color3 = System.Drawing.Color.Navy;
-            this.voltb.StateNormal.Track.Color4 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.voltb.StateNormal.Track.Color5 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.voltb.StateTracking.Position.Color1 = System.Drawing.Color.Red;
-            this.voltb.StateTracking.Position.Color2 = System.Drawing.Color.Red;
-            this.voltb.StateTracking.Position.Color3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.voltb.StateTracking.Position.Color4 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.voltb.StateTracking.Position.Color5 = System.Drawing.Color.Maroon;
-            this.voltb.ToolTipValues.EnableToolTips = true;
-            this.voltb.ToolTipValues.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("resource.ImageTransparentColor")));
-            this.voltb.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.AbsolutePoint;
-            this.voltb.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.Custom1;
-            this.voltb.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Large;
-            this.voltb.VolumeControl = true;
+            this.voltb.PushedButtonEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.voltb.ShowButtons = false;
+            this.voltb.ThemeName = "Default";
+            this.voltb.ThemeStyle.BackColor = System.Drawing.Color.Red;
+            this.voltb.ThemeStyle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.voltb.ThemeStyle.DisabledTrackBarColor = System.Drawing.Color.Maroon;
+            this.voltb.TimerInterval = 100;
+            this.voltb.Transparent = true;
+            this.voltb.Value = 5;
             // 
             // Duration
             // 
@@ -155,53 +148,18 @@
             // 
             resources.ApplyResources(this.seek, "seek");
             this.seek.BackColor = System.Drawing.Color.Maroon;
-            this.seek.BackStyle = Krypton.Toolkit.PaletteBackStyle.HeaderDockActive;
+            this.seek.BeforeTouchSize = new System.Drawing.Size(374, 20);
+            this.seek.DecreaseButtonSize = new System.Drawing.Size(0, 0);
+            this.seek.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.seek.IncreaseButtonSize = new System.Drawing.Size(0, 0);
             this.seek.Name = "seek";
-            this.seek.OverrideFocus.Tick.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.seek.OverrideFocus.Tick.Color5 = System.Drawing.Color.Tomato;
-            this.seek.OverrideFocus.Track.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.seek.OverrideFocus.Track.Color5 = System.Drawing.Color.Maroon;
-            this.seek.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleOrangeDarkMode;
-            this.seek.StateCommon.Position.Color1 = System.Drawing.Color.LawnGreen;
-            this.seek.StateCommon.Position.Color2 = System.Drawing.Color.Olive;
-            this.seek.StateCommon.Position.Color3 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.seek.StateCommon.Position.Color4 = System.Drawing.Color.Green;
-            this.seek.StateCommon.Position.Color5 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.seek.StateCommon.Tick.Color1 = System.Drawing.Color.Purple;
-            this.seek.StateCommon.Tick.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.seek.StateCommon.Tick.Color3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.seek.StateCommon.Tick.Color4 = System.Drawing.Color.Fuchsia;
-            this.seek.StateCommon.Tick.Color5 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.seek.StateCommon.Track.Color1 = System.Drawing.Color.Red;
-            this.seek.StateCommon.Track.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.seek.StateCommon.Track.Color3 = System.Drawing.Color.Red;
-            this.seek.StateCommon.Track.Color4 = System.Drawing.Color.OrangeRed;
-            this.seek.StateCommon.Track.Color5 = System.Drawing.Color.Yellow;
-            this.seek.StateDisabled.Position.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.seek.StateDisabled.Tick.Color1 = System.Drawing.Color.Green;
-            this.seek.StateNormal.Position.Color1 = System.Drawing.Color.Blue;
-            this.seek.StateNormal.Position.Color2 = System.Drawing.Color.Blue;
-            this.seek.StateNormal.Position.Color3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.seek.StateNormal.Position.Color4 = System.Drawing.Color.Navy;
-            this.seek.StateNormal.Position.Color5 = System.Drawing.Color.Purple;
-            this.seek.StateNormal.Tick.Color1 = System.Drawing.Color.OrangeRed;
-            this.seek.StateNormal.Tick.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.seek.StateNormal.Tick.Color3 = System.Drawing.Color.Olive;
-            this.seek.StateNormal.Tick.Color4 = System.Drawing.Color.Yellow;
-            this.seek.StateNormal.Tick.Color5 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.seek.StateNormal.Track.Color1 = System.Drawing.Color.Orange;
-            this.seek.StateNormal.Track.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.seek.StateNormal.Track.Color3 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.seek.StateNormal.Track.Color4 = System.Drawing.Color.Yellow;
-            this.seek.StateNormal.Track.Color5 = System.Drawing.Color.Olive;
-            this.seek.StateTracking.Position.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.seek.StateTracking.Position.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.seek.StateTracking.Position.Color3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.seek.StateTracking.Position.Color4 = System.Drawing.Color.Green;
-            this.seek.StateTracking.Position.Color5 = System.Drawing.Color.Teal;
-            this.seek.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.seek.ToolTipValues.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("resource.ImageTransparentColor1")));
-            this.seek.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Small;
+            this.seek.ShowButtons = false;
+            this.seek.ShowFocusRect = false;
+            this.seek.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Metro;
+            this.seek.ThemeName = "Metro";
+            this.seek.TimerInterval = 100;
+            this.seek.Transparent = true;
+            this.seek.Value = 0;
             // 
             // playtime
             // 
@@ -210,10 +168,11 @@
             // Next
             // 
             this.Next.BackColor = System.Drawing.Color.Transparent;
-            this.Next.FlatAppearance.BorderSize = 0;
-            this.Next.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Next.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             resources.ApplyResources(this.Next, "Next");
+            this.Next.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.Next.FlatAppearance.BorderSize = 0;
+            this.Next.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Next.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Next.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Next.Image = global::N4S_Player.Properties.Resources.next;
             this.Next.Name = "Next";
@@ -222,21 +181,24 @@
             // Previous
             // 
             this.Previous.BackColor = System.Drawing.Color.Transparent;
-            this.Previous.FlatAppearance.BorderSize = 0;
-            this.Previous.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Previous.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             resources.ApplyResources(this.Previous, "Previous");
+            this.Previous.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.Previous.FlatAppearance.BorderSize = 0;
+            this.Previous.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Previous.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Previous.Image = global::N4S_Player.Properties.Resources.previous;
             this.Previous.Name = "Previous";
             this.Previous.UseVisualStyleBackColor = false;
+           
             // 
             // Stop
             // 
             this.Stop.BackColor = System.Drawing.Color.Transparent;
-            this.Stop.FlatAppearance.BorderSize = 0;
-            this.Stop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Stop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             resources.ApplyResources(this.Stop, "Stop");
+            this.Stop.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.Stop.FlatAppearance.BorderSize = 0;
+            this.Stop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Stop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Stop.Image = global::N4S_Player.Properties.Resources.stop_button;
             this.Stop.Name = "Stop";
             this.Stop.UseVisualStyleBackColor = false;
@@ -245,10 +207,10 @@
             // 
             resources.ApplyResources(this.Play, "Play");
             this.Play.BackColor = System.Drawing.Color.Transparent;
-            this.Play.FlatAppearance.BorderColor = System.Drawing.Color.Salmon;
+            this.Play.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.Play.FlatAppearance.BorderSize = 0;
-            this.Play.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Play.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
+            this.Play.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Play.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Play.Image = global::N4S_Player.Properties.Resources.play__1_;
             this.Play.Name = "Play";
             this.Play.UseVisualStyleBackColor = false;
@@ -256,10 +218,11 @@
             // Pause
             // 
             this.Pause.BackColor = System.Drawing.Color.Transparent;
-            this.Pause.FlatAppearance.BorderSize = 0;
-            this.Pause.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Pause.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             resources.ApplyResources(this.Pause, "Pause");
+            this.Pause.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.Pause.FlatAppearance.BorderSize = 0;
+            this.Pause.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Pause.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Pause.Image = global::N4S_Player.Properties.Resources.pause;
             this.Pause.Name = "Pause";
             this.Pause.UseVisualStyleBackColor = false;
@@ -288,14 +251,6 @@
             this.TDuration.ForeColor = System.Drawing.Color.Blue;
             this.TDuration.Name = "TDuration";
             // 
-            // bps
-            // 
-            resources.ApplyResources(this.bps, "bps");
-            this.bps.BackColor = System.Drawing.Color.Olive;
-            this.bps.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bps.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.bps.Name = "bps";
-            // 
             // npl
             // 
             resources.ApplyResources(this.npl, "npl");
@@ -303,102 +258,66 @@
             // 
             // repeat
             // 
+            this.repeat.AccessibleRole = System.Windows.Forms.AccessibleRole.SplitButton;
+            activeStateCollection1.BackColor = System.Drawing.Color.Lime;
+            activeStateCollection1.BorderColor = System.Drawing.Color.Maroon;
+            activeStateCollection1.ForeColor = System.Drawing.Color.Red;
+            activeStateCollection1.Text = "";
+            this.repeat.ActiveState = activeStateCollection1;
             resources.ApplyResources(this.repeat, "repeat");
-            this.repeat.BackColor = System.Drawing.Color.Transparent;
-            this.repeat.FlatAppearance.BorderSize = 0;
-            this.repeat.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime;
-            this.repeat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.repeat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
-            this.repeat.ForeColor = System.Drawing.Color.GreenYellow;
-            this.repeat.Image = global::N4S_Player.Properties.Resources.icons8_repeat_24;
+            this.repeat.BackgroundImage = global::N4S_Player.Properties.Resources.icons8_repeat_24;
+            this.repeat.ForeColor = System.Drawing.SystemColors.ControlText;
+            inactiveStateCollection1.Text = "";
+            this.repeat.InactiveState = inactiveStateCollection1;
             this.repeat.Name = "repeat";
-            this.repeat.UseVisualStyleBackColor = false;
+            sliderCollection1.Width = 10;
+            this.repeat.Slider = sliderCollection1;
+            this.repeat.ThemeName = "Metro";
+            this.repeat.ThemeStyle.ActiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.repeat.ThemeStyle.ActiveBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.repeat.ThemeStyle.ActiveForeColor = System.Drawing.Color.Green;
+            this.repeat.ThemeStyle.ActiveHoverBackColor = System.Drawing.Color.Lime;
+            this.repeat.ThemeStyle.ActiveHoverBorderColor = System.Drawing.Color.Yellow;
+            this.repeat.ThemeStyle.BorderThickness = 0;
             // 
             // ln
             // 
             resources.ApplyResources(this.ln, "ln");
             this.ln.Name = "ln";
             // 
-            // progressBarAdv1
-            // 
-            this.progressBarAdv1.BackMultipleColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Empty};
-            this.progressBarAdv1.BackSegments = false;
-            this.progressBarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
-            this.progressBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.progressBarAdv1.CustomText = null;
-            this.progressBarAdv1.CustomWaitingRender = false;
-            this.progressBarAdv1.ForeColor = Color.FromArgb(254, 10, 150);
-            this.progressBarAdv1.ForegroundImage = null;
-            this.progressBarAdv1.ForeSegments = false;
-            resources.ApplyResources(this.progressBarAdv1, "progressBarAdv1");
-            this.progressBarAdv1.MultipleColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Empty};
-            this.progressBarAdv1.Name = "progressBarAdv1";
-            this.progressBarAdv1.SegmentWidth = 12;
-            this.progressBarAdv1.TextVisible = false;
-            this.progressBarAdv1.ThemeStyle.BackColor = System.Drawing.Color.Transparent;
-            this.progressBarAdv1.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.progressBarAdv1.Value = 0;
-            this.progressBarAdv1.WaitingGradientWidth = 400;
-            // 
             // progressBarAdv2
             // 
-            this.progressBarAdv2.BackMultipleColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Empty};
-            this.progressBarAdv2.BackSegments = false;
-            this.progressBarAdv2.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
-            this.progressBarAdv2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.progressBarAdv2.CustomText = null;
-            this.progressBarAdv2.CustomWaitingRender = false;
-            this.progressBarAdv2.ForeColor = Color.FromArgb(254, 0, 0);
-            this.progressBarAdv2.ForegroundImage = null;
-            this.progressBarAdv2.ForeSegments = false;
+            this.progressBarAdv2.Controls.Add(this.label1);
+            this.progressBarAdv2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.progressBarAdv2, "progressBarAdv2");
-            this.progressBarAdv2.MultipleColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Empty};
             this.progressBarAdv2.Name = "progressBarAdv2";
-            this.progressBarAdv2.ProgressOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.progressBarAdv2.SegmentWidth = 12;
-            this.progressBarAdv2.TextVisible = false;
-            this.progressBarAdv2.ThemeStyle.BackColor = System.Drawing.Color.Transparent;
-            this.progressBarAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.progressBarAdv2.Value = 0;
-            this.progressBarAdv2.WaitingGradientWidth = 400;
-            progressBarAdv2.Width = 20;
-            progressBarAdv2.Height = 225;
+            // 
+            // label1
+            // 
+            this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Indigo;
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Name = "label1";
             // 
             // progressBarAdv3
             // 
-            this.progressBarAdv3.BackMultipleColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Empty};
-            this.progressBarAdv3.BackSegments = false;
-            this.progressBarAdv3.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
-            this.progressBarAdv3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.progressBarAdv3.CustomText = null;
-            this.progressBarAdv3.CustomWaitingRender = false;
-            this.progressBarAdv3.ForeColor = Color.FromArgb(254, 0, 0);
-            this.progressBarAdv3.ForegroundImage = null;
-            this.progressBarAdv3.ForeSegments = false;
+            this.progressBarAdv3.Controls.Add(this.label2);
+            this.progressBarAdv3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.progressBarAdv3, "progressBarAdv3");
-            this.progressBarAdv3.MultipleColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Empty};
             this.progressBarAdv3.Name = "progressBarAdv3";
-            this.progressBarAdv3.ProgressOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.progressBarAdv3.SegmentWidth = 12;
-            this.progressBarAdv3.TextOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.progressBarAdv3.TextVisible = false;
-            this.progressBarAdv3.ThemeStyle.BackColor = System.Drawing.Color.Maroon;
-            this.progressBarAdv3.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.progressBarAdv3.ThemeStyle.BorderThickness = 0;
-            this.progressBarAdv3.ThemeStyle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.progressBarAdv3.ThemeStyle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.progressBarAdv3.ThemeStyle.DisabledFillColor = System.Drawing.Color.Green;
-            this.progressBarAdv3.ThemeStyle.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.progressBarAdv3.Value = 0;
-            this.progressBarAdv3.WaitingGradientWidth = 400;
-            progressBarAdv3.Width = 20;
-            progressBarAdv3.Height = 225;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Indigo;
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // A7_Music
             // 
@@ -406,13 +325,12 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.progressBarAdv3);
             this.Controls.Add(this.progressBarAdv2);
-            this.Controls.Add(this.progressBarAdv1);
             this.Controls.Add(this.ln);
             this.Controls.Add(this.repeat);
             this.Controls.Add(this.npl);
-            this.Controls.Add(this.bps);
             this.Controls.Add(this.TDuration);
             this.Controls.Add(this.PlayImage);
             this.Controls.Add(this.vollbl);
@@ -435,19 +353,18 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.TransparencyKey = System.Drawing.Color.Red;
             ((System.ComponentModel.ISupportInitialize)(this.PlayImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarAdv1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarAdv2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarAdv3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repeat)).EndInit();
+            this.progressBarAdv2.ResumeLayout(false);
+            this.progressBarAdv3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
         #endregion
-        private System.Windows.Forms.ListView MusicList;
+        private Syncfusion.Windows.Forms.Tools.DataListView MusicList;
         private Button Browse;
         private Button Pause;
         private System.Windows.Forms.Label Title;
-        private Krypton.Toolkit.KryptonTrackBar voltb;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx voltb;
         private Button Play;
         private Button Stop;
         private System.Windows.Forms.Label Duration;
@@ -459,14 +376,14 @@
         private System.Windows.Forms.Label TDuration;
         private ColumnHeader td;
         protected ColumnHeader st;
-        protected Krypton.Toolkit.KryptonTrackBar seek;
-        private Label bps;
         private Label npl;
-        private CheckBox  repeat;
+        private Syncfusion.Windows.Forms.Tools.ToggleButton  repeat;
         private Label ln;
-        private Syncfusion.Windows.Forms.Tools.ProgressBarAdv progressBarAdv1;
-        private Syncfusion.Windows.Forms.Tools.ProgressBarAdv progressBarAdv2;
-        private Syncfusion.Windows.Forms.Tools.ProgressBarAdv progressBarAdv3;
+        private Panel progressBarAdv2;
+        private Panel progressBarAdv3;
+        internal Syncfusion.Windows.Forms.Tools.TrackBarEx seek;
+        private Panel label2;
+        private Panel label1;
+        private Label label3;
     }
 }
-

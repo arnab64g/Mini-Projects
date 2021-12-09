@@ -7,7 +7,6 @@ namespace N4S_Player
     }
     internal static class Program
     {
-        
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
