@@ -1,0 +1,384 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "N4S_Player/1.0.0": {
+        "dependencies": {
+          "Krypton.Toolkit": "6.2111.312",
+          "MP3Sharp": "1.0.5",
+          "NAudio": "2.0.1",
+          "Syncfusion.Tools.Windows": "19.3.0.57",
+          "TagLibSharp": "2.2.0"
+        },
+        "runtime": {
+          "N4S_Player.dll": {}
+        },
+        "resources": {
+          "hi-IN/N4S_Player.resources.dll": {
+            "locale": "hi-IN"
+          }
+        }
+      },
+      "Krypton.Toolkit/6.2111.312": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Krypton.Toolkit.dll": {
+            "assemblyVersion": "6.2111.312.0",
+            "fileVersion": "6.2111.312.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.1.0": {},
+      "Microsoft.Win32.Registry/4.7.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
+      "MP3Sharp/1.0.5": {
+        "runtime": {
+          "lib/netstandard2.0/MP3Sharp.dll": {
+            "assemblyVersion": "1.0.5.0",
+            "fileVersion": "1.0.5.0"
+          }
+        }
+      },
+      "NAudio/2.0.1": {
+        "dependencies": {
+          "NAudio.Asio": "2.0.0",
+          "NAudio.Core": "2.0.0",
+          "NAudio.Midi": "2.0.1",
+          "NAudio.Wasapi": "2.0.0",
+          "NAudio.WinForms": "2.0.1",
+          "NAudio.WinMM": "2.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "NAudio.Asio/2.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "NAudio.Core": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Asio.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "NAudio.Core/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "NAudio.Midi/2.0.1": {
+        "dependencies": {
+          "NAudio.Core": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Midi.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "NAudio.Wasapi/2.0.0": {
+        "dependencies": {
+          "NAudio.Core": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Wasapi.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "NAudio.WinForms/2.0.1": {
+        "dependencies": {
+          "NAudio.WinMM": "2.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/NAudio.WinForms.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "NAudio.WinMM/2.0.1": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "NAudio.Core": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.WinMM.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "Syncfusion.Grid.Windows/19.3.0.57": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.3.0.57",
+          "Syncfusion.Shared.Base": "19.3.0.57",
+          "Syncfusion.Shared.Windows": "19.3.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Grid.Windows.dll": {
+            "assemblyVersion": "19.3500.0.57",
+            "fileVersion": "19.3500.0.57"
+          }
+        }
+      },
+      "Syncfusion.Licensing/19.3.0.57": {
+        "runtime": {
+          "lib/net5.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "19.3.0.57",
+            "fileVersion": "19.3.0.57"
+          }
+        }
+      },
+      "Syncfusion.Shared.Base/19.3.0.57": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.3.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Shared.Base.dll": {
+            "assemblyVersion": "19.3500.0.57",
+            "fileVersion": "19.3500.0.57"
+          }
+        }
+      },
+      "Syncfusion.Shared.Windows/19.3.0.57": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.3.0.57",
+          "Syncfusion.Shared.Base": "19.3.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Shared.Windows.dll": {
+            "assemblyVersion": "19.3500.0.57",
+            "fileVersion": "19.3500.0.57"
+          }
+        }
+      },
+      "Syncfusion.SpellChecker.Base/19.3.0.57": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.3.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.SpellChecker.Base.dll": {
+            "assemblyVersion": "19.3500.0.57",
+            "fileVersion": "19.3500.0.57"
+          }
+        }
+      },
+      "Syncfusion.Tools.Base/19.3.0.57": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.3.0.57",
+          "Syncfusion.Shared.Base": "19.3.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Tools.Base.dll": {
+            "assemblyVersion": "19.3500.0.57",
+            "fileVersion": "19.3500.0.57"
+          }
+        }
+      },
+      "Syncfusion.Tools.Windows/19.3.0.57": {
+        "dependencies": {
+          "Syncfusion.Grid.Windows": "19.3.0.57",
+          "Syncfusion.Licensing": "19.3.0.57",
+          "Syncfusion.Shared.Base": "19.3.0.57",
+          "Syncfusion.Shared.Windows": "19.3.0.57",
+          "Syncfusion.SpellChecker.Base": "19.3.0.57",
+          "Syncfusion.Tools.Base": "19.3.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Tools.Windows.dll": {
+            "assemblyVersion": "19.3500.0.57",
+            "fileVersion": "19.3500.0.57"
+          }
+        }
+      },
+      "System.Security.AccessControl/4.7.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {},
+      "TagLibSharp/2.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/TagLibSharp.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "N4S_Player/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Krypton.Toolkit/6.2111.312": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aYUYphbuG9uqHVlNLNqRvi9tLhx5L2WGzD3fplV6kE6V1NhaY00Mz1HucGt23P90nU2KaecmsMrapZW5lSdd4w==",
+      "path": "krypton.toolkit/6.2111.312",
+      "hashPath": "krypton.toolkit.6.2111.312.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
+      "path": "microsoft.netcore.platforms/3.1.0",
+      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.Registry/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
+      "path": "microsoft.win32.registry/4.7.0",
+      "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
+    },
+    "MP3Sharp/1.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KyGy1ZBVEXfovHdJRY8NzjWZBdL75PSx+13KW720JuUTKyWbDCHk0jgjif9b62UPnBZu5V/ZB+tpHWcPhoZS8Q==",
+      "path": "mp3sharp/1.0.5",
+      "hashPath": "mp3sharp.1.0.5.nupkg.sha512"
+    },
+    "NAudio/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QTbkeWOC9IBRiq2rvyFnm47ro4HYZQXJQMrhgAD1BwbkUzH+NMt+2ayLDnAJNJQu6V69Of6KZSYyDfU2Pr+dzQ==",
+      "path": "naudio/2.0.1",
+      "hashPath": "naudio.2.0.1.nupkg.sha512"
+    },
+    "NAudio.Asio/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Pd51zAS2L3+MK/dJ5VrInz6ggHUie9j1qCXysXL3Vj53p9A2RxjpIZafuyba2ZdeMKaOMOHXdtkUqFdKqVMQg==",
+      "path": "naudio.asio/2.0.0",
+      "hashPath": "naudio.asio.2.0.0.nupkg.sha512"
+    },
+    "NAudio.Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-knmGOIYbzn9ZGkFcVs5d3zEYvi50jVriyEirVtAHjkcDoo2ziK32bZb7KkFARLD4lhCGkqp6uT0+0fc4JIfQcw==",
+      "path": "naudio.core/2.0.0",
+      "hashPath": "naudio.core.2.0.0.nupkg.sha512"
+    },
+    "NAudio.Midi/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A5pQerGAmtNNfSMkGaRacqBJG1xg4bjQE0XaxsO3/rhEE80NLUN6gQm+x/m7ZGbSoPUB5fav2jW3tZkdPadZ7w==",
+      "path": "naudio.midi/2.0.1",
+      "hashPath": "naudio.midi.2.0.1.nupkg.sha512"
+    },
+    "NAudio.Wasapi/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7ES+jfZyOooBp86gql9BZ/OjKFmGfLaSLCtJagtCYiRGxfauHp4hXyeuwxS2mPLBxBGxBo9oGThN6y3QY+/w/w==",
+      "path": "naudio.wasapi/2.0.0",
+      "hashPath": "naudio.wasapi.2.0.0.nupkg.sha512"
+    },
+    "NAudio.WinForms/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SOyXRsLePAvIWG20OMRHiUkNijme6J28DKBVesmhdfh4i7OKgkvGLN19eT+vPfXr97yhMudULsyYp9Niz8/a+g==",
+      "path": "naudio.winforms/2.0.1",
+      "hashPath": "naudio.winforms.2.0.1.nupkg.sha512"
+    },
+    "NAudio.WinMM/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i7Da/gCqvwWvETFBRkuwCelSXEK5rPG7pTaqCU9aXFRiO0p7lwHjm/+k2lOWLmRGUJdLm/VSDO6Vknacnb6mSg==",
+      "path": "naudio.winmm/2.0.1",
+      "hashPath": "naudio.winmm.2.0.1.nupkg.sha512"
+    },
+    "Syncfusion.Grid.Windows/19.3.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DpPD6i86lkS6DBPTGKBz4UCxt7VX4fRfhXN81dYfwsUjcVjQsfszNAVDMpfKEMRFIdXhKq0P0qQHiP6U9GsLiA==",
+      "path": "syncfusion.grid.windows/19.3.0.57",
+      "hashPath": "syncfusion.grid.windows.19.3.0.57.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/19.3.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+KlPbfggYy1s6PwkIlAZj9yh04CEAqdITK0ch3gAEJWteu+WueCqurXn1YIecFpRLoBXsNYP/BvuOQpmVOmnQw==",
+      "path": "syncfusion.licensing/19.3.0.57",
+      "hashPath": "syncfusion.licensing.19.3.0.57.nupkg.sha512"
+    },
+    "Syncfusion.Shared.Base/19.3.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sMJYffw9ECKwN+5iLTg2BFdcVmtBkpH3yGa531HNP6Gt850svRMWgSAKDBuOZ9ePB9lCIH0xQD3lODrz6TgW7A==",
+      "path": "syncfusion.shared.base/19.3.0.57",
+      "hashPath": "syncfusion.shared.base.19.3.0.57.nupkg.sha512"
+    },
+    "Syncfusion.Shared.Windows/19.3.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dubAsun7w2EAxj18Yea7KD0kxV3XgcanPd11KMht9DrjdMhuKBDzIRtbt8FPSrF71Ezrpv7b5QQvW32FRlDu7w==",
+      "path": "syncfusion.shared.windows/19.3.0.57",
+      "hashPath": "syncfusion.shared.windows.19.3.0.57.nupkg.sha512"
+    },
+    "Syncfusion.SpellChecker.Base/19.3.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LOSUOs9GfXHG0fXO2BZF+0LoLO/UiUGi+EbeJ1PQ3K0WVUkGuM3xCggtMrD7fofYUaoOZztqoURtrnjNF9B9Og==",
+      "path": "syncfusion.spellchecker.base/19.3.0.57",
+      "hashPath": "syncfusion.spellchecker.base.19.3.0.57.nupkg.sha512"
+    },
+    "Syncfusion.Tools.Base/19.3.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5USmWTv5PTA+EX0AyqEYE35kqLVf4xPiIDM+eGWSc37FEPoSHBfzO1GydMu7NwGouhmFDO7jv31u7A3MiOSn6A==",
+      "path": "syncfusion.tools.base/19.3.0.57",
+      "hashPath": "syncfusion.tools.base.19.3.0.57.nupkg.sha512"
+    },
+    "Syncfusion.Tools.Windows/19.3.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/lnW7vLWOzolthoUWL4ft9PvrG5ywAWQIDnM/33RfH1v++4w009mMaCHGszS4kqLctJsZNTFdTrhY2XIRn6t5Q==",
+      "path": "syncfusion.tools.windows/19.3.0.57",
+      "hashPath": "syncfusion.tools.windows.19.3.0.57.nupkg.sha512"
+    },
+    "System.Security.AccessControl/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
+      "path": "system.security.accesscontrol/4.7.0",
+      "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+      "path": "system.security.principal.windows/4.7.0",
+      "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "TagLibSharp/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X8UOWeaJgHGrN3xilg3O0lqowhUSwNEiGrE8ITDd1rCn14LqGCWKgn5GX++SW4vuXBMne8+pyic6aUvOFQMRlA==",
+      "path": "taglibsharp/2.2.0",
+      "hashPath": "taglibsharp.2.2.0.nupkg.sha512"
+    }
+  }
+}

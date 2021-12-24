@@ -142,6 +142,7 @@
             resources.ApplyResources(this.Duration, "Duration");
             this.Duration.BackColor = System.Drawing.Color.Olive;
             this.Duration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Duration.ForeColor = System.Drawing.Color.White;
             this.Duration.Name = "Duration";
             // 
             // seek
@@ -189,7 +190,6 @@
             this.Previous.Image = global::N4S_Player.Properties.Resources.previous;
             this.Previous.Name = "Previous";
             this.Previous.UseVisualStyleBackColor = false;
-           
             // 
             // Stop
             // 
@@ -248,7 +248,7 @@
             resources.ApplyResources(this.TDuration, "TDuration");
             this.TDuration.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.TDuration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TDuration.ForeColor = System.Drawing.Color.Blue;
+            this.TDuration.ForeColor = System.Drawing.Color.White;
             this.TDuration.Name = "TDuration";
             // 
             // npl
@@ -349,7 +349,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "A7_Music";
-            this.Opacity = 0.95D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.TransparencyKey = System.Drawing.Color.Red;
             ((System.ComponentModel.ISupportInitialize)(this.PlayImage)).EndInit();
@@ -358,6 +357,7 @@
             this.progressBarAdv3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
         #endregion
         private Syncfusion.Windows.Forms.Tools.DataListView MusicList;
