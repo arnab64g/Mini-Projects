@@ -4,7 +4,7 @@ namespace N4S_Player
 {
     public partial class A7_Music : Form
     {
-        int count = 0, ci = 0, duration, ct;
+        int count = 0, ci = 0, duration, ct, l = 0, r = 0;
         private AudioFileReader ws;
         MMDevice device;
         MMDeviceEnumerator deviceEnumerator = new MMDeviceEnumerator();
@@ -12,7 +12,9 @@ namespace N4S_Player
         TimeSpan ts;
         string[] S = new string[100];
         Details[] D = new Details[100];
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public A7_Music()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
             InitializeComponent();
             count = Settings.load_Playlist(S);
@@ -46,7 +48,7 @@ namespace N4S_Player
             voltb.Scroll += Lavel_Volume;
             Stop.Click += Stop_Current;
             Pause.Click += Push_Music;
-            MusicList.MouseClick += Play_Music_s;
+            MusicList.MouseDoubleClick += Play_Music_s;
             seek.Scroll += Seek_Music;
             Previous.Click += Play_Prev;
             Next.Click += Play_Next;
@@ -130,7 +132,7 @@ namespace N4S_Player
                 }
                 catch
                 {
-                    PlayImage.Image = global::N4S_Player.Properties.Resources.pngegg;
+                    PlayImage.Image = Properties.Resources.pngegg;
                 }
             }
             Pause.Visible = true;
@@ -149,8 +151,12 @@ namespace N4S_Player
                 TDuration.Visible = true;
               
                 seek.Value = ct;  
-                label1.Height = (int)(device.AudioMeterInformation.PeakValues[1] * progressBarAdv2.Height);
-                label2.Height = (int)(device.AudioMeterInformation.PeakValues[0] * progressBarAdv3.Height);
+                r = (int)(device.AudioMeterInformation.PeakValues[1] * 255);
+                l = (int)(device.AudioMeterInformation.PeakValues[0] * 255);
+                label1.Height = r;
+                label2.Height = l;
+                Duration.BackColor = Color.FromArgb(l, 0, 255-l);
+                TDuration.BackColor = Color.FromArgb(r, 0, 255 - r);
             }
             else
             {
